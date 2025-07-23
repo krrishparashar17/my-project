@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Student Registration Form</title>
+    </head>
+    <body>
+        <h1>Student Registration Form</h1>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label><br>
+        <input type="text"id="name"name="name" minlength="3" maxlength="15"required><br><br>
+
+        <form action="/submit" method="post">
+            <label for="Email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <form action="/submit" method="post">
+            <label for="Age">Age:</label><br>
+        <input type="number" id="Age" name="Age" min="5" max="100"><br><br>
+
+        <input type="submit" value="Register">
+        </form>
+
+    </body>
+</html>
