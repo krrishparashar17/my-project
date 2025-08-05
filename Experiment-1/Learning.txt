@@ -1,11 +1,60 @@
-1. Things I have Learned from the Experiment 1 of full stack:
-I Learned how to write code for HTML language and learned about HTML tags.
-I Learned how to create a student regestartion form with validation using elements like minlength,maxlength,title,etc.
-I Understood use of proper input types such as text, email and number for the different segments of my HTML code.
+STUDENT REGISTRATION FORM - TEST CASES AND VALIDATIONS
 
-2. Test Cases:
-Name field only accepts 3 to 15 characters.
-Email field only accepts valid email format.
-Age field only allows numbers between 5 and 100.
-If any required field is left empty, the form doesn't submit and shows an error.
-Form submits successfully only when all fields are filled correctly.
+1. FIELD: Name
+- This field is required, the user must enter their name.
+- The name should be between 3 to 15 characters long.
+- It should contain only alphabets and spaces(though not restricted by pattern here).
+
+VALID EXAMPLES:
+- "Krrish"
+- "John Smith"
+
+INVALID EXAMPLES:
+- "" (empty input) – will trigger required error.
+- "Al" – too short.
+- "JonathanChristopherSmith" – exceeds the 15 character limit.
+
+2. FIELD: Email
+- Must be filled in, it’s a required field.
+- Should follow the proper email format like: krrish@gmail.com
+
+VALID EXAMPLES:
+- "krrish17@gmail.com"
+- "test.user@domain.in"
+
+INVALID EXAMPLES:
+- "krrish" – no domain present.
+- "krrish@" – incomplete email.
+- "krrish@domain,com" – invalid character used.
+
+3. FIELD: Age
+- This field is compulsory.
+- It accepts only numbers.
+- Valid age range is between 5 and 100.
+
+VALID EXAMPLES:
+- 5 – minimum limit.
+- 20, 35, 90 – commonly valid ages.
+- 100 – upper boundary.
+
+INVALID EXAMPLES:
+-"" (left blank)– gives required error.
+-4 – too young, less than allowed.
+-101 – more than max allowed.
+-"abc" – letters are not allowed.
+
+FORM SUBMISSION:
+- The form will only be submitted if all inputs are correct.
+- Even if one field is wrong, it won’t submit and will show error messages.
+
+BASIC CSS LAYOUT (from assumed style.css):
+- The form is centered and well-spaced.
+- Inputs have proper spacing and are easy to interact with.
+- A simple "Register" button is provided to submit the form.
+
+WHAT I LEARNT FROM THIS:
+- I understood how to make a working student registration form using HTML.
+- Learnt how to apply basic HTML validations like required, min, max, minlength, etc.
+- Tried testing different kinds of input to check form behavior.
+- Got clarity on how front-end validation works without JavaScript.
+- Overall, this gave me hands-on practice in HTML forms and validation.
