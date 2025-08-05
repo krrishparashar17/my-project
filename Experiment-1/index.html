@@ -2,24 +2,25 @@
 <html>
     <head>
         <title>Student Registration Form</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Student Registration Form</h1>
         <form action="/submit" method="post">
             <label for="name">Name:</label><br>
-        <input type="text"id="name"name="name" minlength="3" maxlength="15"
-        title="Only letters and spaces allowed (3-15 characters)" 
-        required><br><br>
+            <input type="text" id="name" name="name" minlength="3" maxlength="15"
+            title="Only letters and spaces allowed (3-15 characters)" 
+            required><br><br>
 
             <label for="Email">Email:</label><br>
-        <input type="email" id="email" name="email"
-        title="Enter a valid email (e.g., example@gmail.com)"
-        required><br><br>
+            <input type="email" id="email" name="email"
+            title="Enter a valid email (e.g., example@gmail.com)"
+            required><br><br>
 
             <label for="Age">Age:</label><br>
-        <input type="number" id="Age" name="Age" min="5" max="100"required><br><br>
-        <input type="submit" value="Register">
-        </form>
+            <input type="number" id="Age" name="Age" min="5" max="100" required><br><br>
 
+            <input type="submit" value="Register">
+        </form>
     </body>
 </html>
