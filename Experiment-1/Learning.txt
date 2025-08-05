@@ -1,0 +1,11 @@
+1. Things I have Learned from the Experiment 1 of full stack:
+I Learned how to write code for HTML language and learned about HTML tags.
+I Learned how to create a student regestartion form with validation using elements like minlength,maxlength,title,etc.
+I Understood use of proper input types such as text, email and number for the different segments of my HTML code.
+
+2. Test Cases:
+Name field only accepts 3 to 15 characters.
+Email field only accepts valid email format.
+Age field only allows numbers between 5 and 100.
+If any required field is left empty, the form doesn't submit and shows an error.
+Form submits successfully only when all fields are filled correctly.
