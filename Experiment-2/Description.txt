@@ -1,0 +1,54 @@
+TITLE:
+Responsive Banking UI with Deposit/Withdrawal Buttons and Balance Display
+
+OBJECTIVE:
+To design a clean and modern banking user interface using only HTML and CSS. The focus was on layout, styling, and responsiveness across devices, without involving any JavaScript or backend functionality.
+
+TASK DESCRIPTION:
+In this experiment, I created a simple banking UI that includes the following:
+- A balance display area which currently shows "$0"
+- A Deposit button (green styled)
+- A Withdrawal button (red styled)
+
+The layout was structured using nested containers:
+- The outer container holds the full card-like UI and provides spacing, border, and shadow effects.
+- The inner container includes the balance and the two buttons, styled with a blue background and white text.
+
+The page layout is centered both vertically and horizontally using Flexbox on the body element.
+
+STYLING & DESIGN DETAILS (CSS BREAKDOWN):
+
+1. BODY (Page Layout)
+- Set to full height of the screen (100vh)
+- Flexbox is used to center the content vertically and horizontally
+- Background color is light blue (#e3f2fd)
+
+2. OUTER CONTAINER (Yellow Card)
+- Width: 300px, Height: 200px, padding for spacing
+- Background color: Yellow (#ffeb3b)
+- Border: Solid black border with border-radius for curved edges
+- Box-shadow adds a slight 3D effect
+
+3. INNER CONTAINER (Blue Box)
+- Background color: Blue (#03a9f4)
+- Padding and rounded corners applied for cleaner look
+- Contains balance and buttons in vertical layout
+- Text color is white
+
+4. BALANCE DISPLAY
+- Font size: 24px, bold text
+- Positioned above the buttons with spacing below
+
+5. BUTTONS
+- Deposit button is green (#4caf50)
+- Withdrawal button is red (#f44336)
+- Both buttons have white text for contrast
+
+LEARNING OUTCOMES:
+1. I learnt how to use Flexbox to center elements both vertically and horizontally.
+2. Practiced nesting containers to build UI layouts cleanly.
+3. Understood how to apply background colors, shadows, borders, and spacing to create a card-like UI.
+4. Saw how to make simple UIs responsive using relative sizes and proper alignment.
+5. Improved my skills in writing structured, semantic HTML and clean CSS without JavaScript.
+
+Overall, this experiment gave me hands-on experience in frontend layout design with real-world relevance.
