@@ -1,25 +1,55 @@
-body{
+:root{
+    --bg-color-header: #4CAF50;
+    --bg-color-nav: #efefef;
+    --bg-color-main: #ffffff;
+    --bg-color-footer: #4CAF50;
+    --text-color: #000000;
+}
+.dashboard{
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 300px auto;
     grid-template-rows: 100px auto 50px;
     height: 100vh;
-    border: 3.5px solid #000000;
+    border: 3px solid #000000;
 }
 header{
-    background-color: #4CAF50;
+    background-color: var(--bg-color-header);
     grid-column: 1 /span 2;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    color:#ffffff;
 }
 nav{
-    background-color: #efefef;
+    background-color: var(--bg-color-nav);
+    padding: 10px 70px;
+    font-size: medium;
 }
 main{
-    background-color: #ffffff;
+    background-color: var(--bg-color-main);
+    color:var(--text-color);
+    padding-left: 1cm;
 }
 footer{
-    background-color: #4CAF50;
+    background-color: var(--bg-color-footer);
     grid-column: 1 /span 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+#theme-switch {
+ display: none;
+}
+#theme-switch:checked ~ .dashboard {
+    background-color: #333;
+    color: #fff;
+    --bg-color-header: #2d2d2d;
+    --bg-color-nav: #454545;
+    --bg-color-main: #020202;
+    --bg-color-footer: #2d2d2d;
+    --text-color: #ffffff;
 }
