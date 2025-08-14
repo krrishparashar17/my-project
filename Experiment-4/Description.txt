@@ -1,0 +1,34 @@
+Title
+Live Character Counter for Textarea
+
+Objective
+Create a simple web application that counts and displays the number of characters entered in a textarea in real-time using JavaScript.
+
+Task Description
+Design a webpage that contains:
+- A textarea for user input.
+- A dynamic counter below the textarea that updates in real-time as the user types.
+- Basic CSS styling for better readability and presentation.
+
+Requirements
+1. HTML:
+   - Include a `<textarea>` element for user input.
+   - Display the character count below the textarea using a `<div>` or `<span>`.
+2. CSS:
+   - Apply basic styling to make the textarea visually appealing.
+   - Ensure the layout is responsive.
+3. JavaScript:
+   - Use an `input` event listener on the textarea to update the counter as the user types.
+   - Display the total number of characters typed.
+
+Learning Outcomes
+- Learned how to capture and respond to user input in real-time using JavaScript event listeners.
+- Understood how to manipulate the DOM to update content dynamically.
+- Improved skills in combining HTML, CSS, and JavaScript for interactive web components.
+- Gained experience in creating responsive and user-friendly form elements.
+
+What I Have Done
+- Created a textarea element for user text input.
+- Added a live character counter using a `<span>` element inside a `<div>`.
+- Styled the textarea and counter with CSS for a clean and readable layout.
+- Implemented JavaScript logic to listen for input events and update the counter in real-time.
