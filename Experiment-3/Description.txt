@@ -1,0 +1,66 @@
+TITLE:
+ Admin Dashboard with CSS Grid Layout and Theme Switching
+
+OBJECTIVE:
+ To design and build a responsive, professional admin dashboard layout using HTML and CSS Grid, along with a theme switching option for light and dark modes. The goal was to practice advanced layout techniques and create a visually adaptable interface.
+
+TASK DESCRIPTION:
+ In this experiment, I created a complete admin dashboard interface consisting of:
+
+Header:
+ Displays the dashboard title.
+ Contains a label for the theme switch (Dark Mode).
+
+Sidebar Navigation:
+ Contains navigation links: Home, Users, and Settings.
+
+Main Content Area:
+ Placeholder for the main dashboard content such as charts, tables, or reports.
+ Displays a welcome message to the admin.
+
+Footer:
+ Shows footer text with © year and project name.
+ The layout is built using CSS Grid with defined columns and rows for clear section placement.
+
+THEME SWITCHING FEATURE:
+ Implemented using a hidden checkbox input (#theme-switch).
+ When checked, CSS variables update background colors, text colors, and section styles to switch from light mode to dark mode without page reload.
+ Uses the :checked selector with the sibling .dashboard element to apply the dark theme.
+
+CSS DESIGN & LAYOUT BREAKDOWN:
+
+CSS Grid Structure:
+ grid-template-columns: Sidebar (300px) + Main area (auto).
+ grid-template-rows: Header (100px) + Main (auto) + Footer (50px).
+ Full viewport height (100vh) with a border for definition.
+
+Header:
+ Spans across both columns.
+ Flexbox used for space-between alignment of the title and theme switch label.
+ Light theme color: Green (#4CAF50) with white text.
+
+Navigation Sidebar:
+ Background: Light gray (#efefef) in light mode.
+ Padding for spacing; links arranged vertically.
+
+Main Content:
+ Background: White in light mode.
+ Text color controlled by CSS variable for easy theme switching.
+
+Footer:
+ Spans both columns.
+ Centered text using flexbox.
+ Light theme color: Green (#4CAF50) with white text.
+
+Dark Mode Adjustments:
+ Backgrounds change to darker shades.
+ Text color becomes white.
+ Sidebar, header, footer, and main area adapt accordingly.
+
+LEARNING OUTCOMES:
+ Learnt to use CSS Grid effectively for building multi-section layouts.
+ Understood how to combine CSS variables and selectors to create theme switching.
+ Improved skills in structuring HTML for clear, maintainable layout sections.
+ Practiced styling for both light and dark themes without JavaScript.
+
+    Gained experience in creating a professional and responsive admin panel interface.
