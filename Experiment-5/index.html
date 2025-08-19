@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      border: 1px solid #333;
+      padding: 15px;
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    select {
+      margin: 10px 0;
+      padding: 5px;
+    }
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Product List</h2>
+    <label for="category">Filter by Category:</label>
+    <select id="category">
+      <option value="All">All</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Books">Books</option>
+    </select>
+
+    <div id="product-list"></div>
+  </div>
+
+  <script>
+    // Product data
+    const products = [
+      { name: "T-Shirt", category: "Clothing" },
+      { name: "Jeans", category: "Clothing" },
+      { name: "Headphones", category: "Electronics" },
+      { name: "Smartphone", category: "Electronics" },
+      { name: "Novel", category: "Books" },
+      { name: "Cookbook", category: "Books" }
+    ];
+
+    const categorySelect = document.getElementById("category");
+    const productList = document.getElementById("product-list");
+
+    // Function to display products
+    function displayProducts(filter) {
+      productList.innerHTML = ""; // Clear existing products
+      const filteredProducts = products.filter(p =>
+        filter === "All" || p.category === filter
+      );
+      filteredProducts.forEach(p => {
+        const div = document.createElement("div");
+        div.className = "product";
+        div.textContent = p.name;
+        productList.appendChild(div);
+      });
+    }
+
+    // Initial load
+    displayProducts("All");
+
+    // Event listener for dropdown change
+    categorySelect.addEventListener("change", (e) => {
+      displayProducts(e.target.value);
+    });
+  </script>
+</body>
+</html>
