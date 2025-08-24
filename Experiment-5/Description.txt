@@ -1,0 +1,26 @@
+Title:
+Dynamic Product Filter with Dropdown using JavaScript DOM Manipulation
+
+Objective:
+The main objective of this project is to build a simple but dynamic web page where a list of products can be filtered instantly based on the user’s choice from a dropdown menu. This allows the user to view only the items they are interested in (like Clothing, Electronics, or Books) without needing to refresh or reload the entire page.
+
+Description:
+-In today’s world, when you open any shopping website like Amazon or Flipkart, you don’t see all the products at once. Instead, you can filter them by categories such as clothing, electronics, or books. This project is a very simple version of that idea.
+-The page has a neat design with a white container in the center. At the top, you can see a dropdown menu with different product categories. By default, All products are shown. As soon as you change the dropdown, JavaScript immediately updates the list of items shown below. For example, if you select Clothing, only T-Shirt and Jeans will appear; if you select Books, only Novel and Cookbook will be visible.
+-The logic behind this is simple: the products are stored in a small JavaScript array with their names and categories. When the dropdown value changes, the script filters the array and displays only the items that match. This happens instantly, giving the user a smooth experience, just like a real e-commerce site.
+
+What I Have Done:
+Designed the structure of the page using HTML.
+Created a dropdown menu with options like All, Clothing, Electronics, and Books.
+Stored product details in a JavaScript array as objects with name and category.
+Wrote a function (displayProducts) that filters products according to the selected category and updates the DOM.
+Attached an event listener to the dropdown so that whenever the selection changes, the product list updates dynamically.
+Styled the page using CSS for better readability: container with border, product cards with padding, and a light background for a clean look.
+
+Learning Outcomes:
+Learned how to connect HTML, CSS, and JavaScript together in one small project.
+Practiced DOM manipulation (creating, clearing, and appending elements dynamically).
+Understood the concept of filtering arrays in JavaScript using .filter().
+Learned how to handle user input events like change on a dropdown.
+Improved understanding of real-time UI updates without page reloads.
+Gained confidence to extend this idea into bigger projects like a mini online store.
