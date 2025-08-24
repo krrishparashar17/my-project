@@ -1,0 +1,45 @@
+Title:
+SVG Drawing Tool — Freehand Drawing with Pure JavaScript & SVG
+
+Objective:
+Build a simple web page where the user can draw freehand lines directly inside an SVG area using the mouse. The drawing should feel instant and smooth, without any external libraries or page reloads.
+
+Description (Humanized):
+Think of this as a tiny paint app built with just HTML, CSS, and JavaScript. When you press the mouse button inside the grey SVG box and move around, the app leaves behind a blue line that follows your cursor. Release the mouse, and that stroke is complete. You can immediately start another one. It’s a neat way to understand how SVG paths work and how to handle mouse events for real-time drawing.
+
+What I Built:
+A centered page with a clean container and a titled header: “SVG Drawing Tool”.
+A drawing canvas made from an SVG element (<svg>) sized 600×400.
+Freehand drawing using an SVG <path> that updates continuously while the mouse moves.
+A simple state machine: when the mouse is down, we draw; when it’s up or leaves the box, we stop.
+
+How It Works (Simple Logic):
+Grab the SVG element by id="drawingArea".
+Keep a few variables:
+drawing (boolean) — are we currently drawing?
+path — the active SVG path element.
+d — the path data string (M x y to start, followed by L x y while moving).
+
+On mousedown:
+Set drawing = true.
+Start a new path at the cursor position using M x y.
+Create a <path> with blue stroke, width 2, no fill, and append it to SVG.
+On mousemove:
+If drawing is true, add a new line segment (L x y) to d and update the path’s d attribute.
+On mouseup or mouseleave:
+Set drawing = false to finish the current stroke.
+
+Learning Outcomes:
+How to track mouse events: mousedown, mousemove, mouseup, and mouseleave.
+How to manipulate SVG elements via the DOM (createElementNS, setAttribute).
+Understanding SVG path commands:
+M x y — move the pen to a starting point.
+L x y — draw a line to a new point.
+Manage simple state (drawing flag) for interactive tools.
+Build responsive, real-time UI behavior with vanilla JavaScript (no libraries).
+
+Technologies Used:
+HTML5 for structure
+CSS3 for a clean, centered layout
+JavaScript for logic and DOM/SVG manipulation
+SVG for resolution-independent drawing
