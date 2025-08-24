@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SVG Drawing Tool</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #fff;
+    }
+    h3 {
+      font-weight: bold;
+      text-align: center;
+    }
+    .container {
+      border: 2px solid black;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    svg {
+      border: 2px solid black;
+      background: #f9f9f9;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SVG Drawing Tool</h1>
+    <svg id="drawingArea" width="600" height="400"></svg>
+  </div>
+
+  <script>
+    const svg = document.getElementById("drawingArea");
+    let drawing = false;
+    let path;
+    let d = "";
+
+    svg.addEventListener("mousedown", (e) => {
+      drawing = true;
+      const x = e.offsetX;
+      const y = e.offsetY;
+      d = `M ${x} ${y}`;
+      path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      path.setAttribute("d", d);
+      path.setAttribute("stroke", "blue");
+      path.setAttribute("stroke-width", 2);
+      path.setAttribute("fill", "none");
+      svg.appendChild(path);
+    });
+
+    svg.addEventListener("mousemove", (e) => {
+      if (!drawing) return;
+      const x = e.offsetX;
+      const y = e.offsetY;
+      d += ` L ${x} ${y}`;
+      path.setAttribute("d", d);
+    });
+
+    svg.addEventListener("mouseup", () => {
+      drawing = false;
+    });
+
+    svg.addEventListener("mouseleave", () => {
+      drawing = false;
+    });
+  </script>
+</body>
+</html>
