@@ -1,0 +1,30 @@
+Title:ProductCard Component Using Props
+
+Objective:To create a reusable React component that displays product details (name, price, and stock status) using props. This exercise helps in understanding the concept of props in React and how to render dynamic data without rewriting component code.
+
+Task Description:
+Build a React component named ProductCard.
+The component should accept name, price, and stock as props.
+Display these details in a clean, styled card layout.
+Use App.jsx to create an array of products and render multiple ProductCard components dynamically using the map() function.
+Add basic CSS styling for better UI presentation and hover effect.
+
+Steps I Perform:
+Create a new React component file ProductCard.jsx.
+Accept props (name, price, stock) and display them inside a styled div.
+In App.jsx, prepare a list of product objects with different values.
+Use map() to loop through the product list and render ProductCard for each product.
+Apply styles from App.css for card design and layout.
+Run the app to see multiple product cards rendered dynamically.
+
+Output:
+A product list where each product is displayed as a card.
+Each card clearly shows the Name, Price, and Stock Status.
+Cards have consistent styling, spacing, and hover effects.
+Changing product data in App.jsx should automatically reflect in the UI without modifying ProductCard.jsx.
+
+Learning Outcomes:
+Understanding how props are passed into React components.
+Learning to design reusable components.
+Using arrays and map() to render multiple components dynamically.
+Applying basic CSS styling to React components.
