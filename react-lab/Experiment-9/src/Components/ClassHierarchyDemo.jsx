@@ -35,8 +35,8 @@ class Teacher extends Person {
 
 
 function ClassHierarchyDemo() {
-  const student = new Student('Alice', 15, '10th');
-  const teacher = new Teacher('Mr. Smith', 45, 'Mathematics');
+  const student = new Student('Krrish', 18, '12th');
+  const teacher = new Teacher('Mr. Harbinder', 30, 'Full Stack');
 
   return (
     <div className="card">
