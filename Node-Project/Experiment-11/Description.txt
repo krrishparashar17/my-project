@@ -1,0 +1,25 @@
+Title:
+REST API for Playing Card Collection Using Express.js
+
+Objective:
+To build a RESTful API using Express.js that manages a collection of playing cards. This experiment demonstrates routing, handling HTTP methods, validating input, and performing basic data manipulation in a Node.js backend environment.
+
+Task Description:
+In this experiment, an Express.js server is created that provides REST API endpoints to manage a playing card collection stored in an in-memory array. 
+The API supports the following operations:
+GET /cards → Retrieve all cards.
+GET /cards/:id → Retrieve a specific card by its ID.
+POST /cards → Add a new card (with suit and value).
+DELETE /cards/:id → Remove a card by its ID.
+The API validates card data (suit and value) before insertion, and returns meaningful JSON responses for both success and error cases. 
+CORS is enabled for cross-origin requests.
+
+Tools and Technologies Used:
+Node.js
+Express.js
+CORS Middleware
+REST Client in VS Code / Postman for testing
+
+Conclusion:
+This experiment helped in understanding how REST APIs work in Node.js using Express.js. 
+It provided hands-on practice with handling different HTTP methods (GET, POST, DELETE), routing, JSON request/response handling, and input validation.
