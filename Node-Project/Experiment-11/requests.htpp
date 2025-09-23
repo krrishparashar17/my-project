@@ -1,0 +1,17 @@
+### GET all 
+GET http://localhost:3000/cards
+
+### GET by ID = 2 (Spades King)
+GET http://localhost:3000/cards/2
+
+### POST create (id 4, Clubs Jack)
+POST http://localhost:3000/cards
+Content-Type: application/json
+
+{
+  "suit": "Clubs",
+  "value": "Jack"
+}
+
+### DELETE id 1 (message + removed card)
+DELETE http://localhost:3000/cards/1
