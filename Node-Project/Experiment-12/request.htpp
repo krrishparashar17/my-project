@@ -1,0 +1,11 @@
+# Get all seats status
+curl http://localhost:3000/seats
+
+# Lock seat 5
+curl -X POST http://localhost:3000/lock/5
+
+# Confirm seat 5 (must be done within 60 seconds of locking)
+curl -X POST http://localhost:3000/confirm/5
+
+# Try to lock an already booked seat (will return error)
+curl -X POST http://localhost:3000/lock/5
