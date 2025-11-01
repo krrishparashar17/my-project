@@ -1,0 +1,12 @@
+1. Clone or create a React app in your project directory.
+2. Edit `src/App.js` and `src/App.css` to customize your application.
+3. Add the provided multi-stage `Dockerfile` and `.dockerignore` to the project root.
+4. Build the React app and Docker image:
+   - Run `npm install`
+   - Run `docker build -t exp25:latest .`
+5. Run the container:
+   - `docker run -d -p 8080:80 --name exp25-container exp25:latest`
+6. Open your browser at [http://localhost:8080](http://localhost:8080) to view the app.
+7. Verify image size with `docker images exp25:latest` (should be ~81MB).
+8. Production build is served via Nginx; dev dependencies are excluded for a small image.
+9. To update, edit code, rebuild, and restart the container.

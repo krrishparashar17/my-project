@@ -1,0 +1,9 @@
+This project demonstrates how to set up a CI/CD pipeline using GitHub Actions. 
+It automates the process of testing, building, and deploying a Node.js application.
+The workflow triggers on every push to the main branch, installs dependencies, runs tests, and builds the project. 
+After a successful build, it automatically deploys the output to GitHub Pages using a secure Personal Access Token (PAT). 
+This setup ensures continuous integration and deployment with minimal manual effort.This project demonstrates how to set up a CI/CD pipeline using GitHub Actions. 
+It automates the process of testing, building, and deploying a Node.js application. 
+The workflow triggers on every push to the main branch, installs dependencies, runs tests, and builds the project. 
+After a successful build, it automatically deploys the output to GitHub Pages using a secure Personal Access Token (PAT). 
+This setup ensures continuous integration and deployment with minimal manual effort.
