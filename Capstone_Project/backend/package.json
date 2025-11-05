@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --runInBand",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-validator": "^7.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.2",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^4.3.2",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^9.4.0",
+    "supertest": "^7.0.0"
+  }
+}
+
