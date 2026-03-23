@@ -1,0 +1,59 @@
+Capstone Project - Role-Based Access Control (RBAC) in a MERN Application
+
+Project Description:
+Design and implement fine-grained Role-Based Access Control (RBAC) in a MERN application where Admin, Editor, and Viewer roles govern which API actions and UI capabilities are allowed. Build a Node.js (Express) backend with JWT-based authentication that encodes role claims and enforces authorization via middleware and query-level filters in MongoDB. In React, reflect effective permissions by enabling/disabling controls, guarding routes, and hiding restricted data. Deliver seeded users/roles and demonstrate row-level ownership checks (e.g., Editors can modify their own content, Admins can manage all).
+
+Hardware Requirements:
+- Processor: Intel i5 or higher
+- RAM: Minimum 8 GB
+- Storage: 20 GB available
+- OS: Windows / Linux / macOS
+
+Software Requirements:
+- Node.js (v18 or higher)
+- MongoDB Community Server
+- React.js (v18)
+- Express.js
+- Visual Studio Code
+- Postman for API testing
+
+Key Features:
+1. Authentication using JWT
+2. Authorization Middleware (Role-based)
+3. Ownership Check for Editors
+4. Role-Based UI Rendering
+5. Protected Routes for Admin, Editor, Viewer
+
+Limitations & Future Scope:
+- Token expiry requires manual re-login
+- Static role definitions, no dynamic role management
+- No hierarchical roles or audit logging
+- No 2FA or refresh tokens yet implemented
+- Future improvements include role inheritance, logging, OAuth integration, and enhanced UI/UX
+
+GitHub Project Layout:
+mern-rbac/
+├─ backend/
+│  ├─ server.js, routes/, models/, controllers/, middleware/
+└─ frontend/
+   ├─ src/, components/, pages/, auth/
+
+Instructions to Run:
+1. Backend Setup:
+   - cd backend
+   - cp .env.example .env
+   - npm install
+   - npm run seed
+   - npm run dev
+2. Frontend Setup:
+   - cd frontend
+   - npm install
+   - npm start
+
+Default Users:
+- Admin: alice@admin.com / admin123
+- Editor: bob@editor.com / editor123
+- Viewer: charlie@viewer.com / viewer123
+
+References:
+MongoDB Docs, Express.js Docs, React Docs, JWT.io, OWASP Access Control Cheat Sheet
